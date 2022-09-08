@@ -2,7 +2,7 @@
 
 int ElementException(int xEE, int yEE, int[][] boardEE)
 {
-  
+
 }
 
 int[][] startingBoard = {
@@ -20,8 +20,22 @@ int[][] startingBoard = {
   new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 9 },
   };
 
-int[][][] availableBoard = new int[][][];
+int[][][] availableBoard = new int[][][10];
+for (int i = 0; i < startingBoard.GetLength(0); i++)
+{
+    for (int j = 0; j < startingBoard.GetLength(1); j++)
+    {
+        if (startingBoard[i, j] != 0) availableBoard[i, j, 0] = startingBoard[i, j];
+        else
+        {
+            for (int k = 0; k < availableBoard.GetLength(2); k++)
+            { 
+              availableBoard[i,j,k]=
+            }
+        }
 
+    }
+}
 
 
 // (int, int) EmptyElPosition(int[][] board)
